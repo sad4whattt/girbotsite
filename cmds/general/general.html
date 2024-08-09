@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>GirBot</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="icon" href="https://i.imgur.com/PaAd8S9.jpeg">
+
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+
+  <link rel="preload" as="image" href="https://i.imgur.com/PaAd8S9.jpeg">
+
+
+  <style>
+    /*** Works on common browsers ***/
+      ::selection {
+      background-color: #3182551c;
+      color: #31825699;
+      }
+
+      /*** Mozilla based browsers ***/
+      ::-moz-selection {
+      background-color: #3182551c;
+      color: #31825699;
+      }
+</style>
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+    <a href="index.html" class="logo">
+      <img src="https://i.imgur.com/PaAd8S9.jpeg" width="50" height="50" alt="Logo">
+      <h1 class="logo-text" style="color:#FFFFFF;"><b>GirBot</b></h1>
+    </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+		
+
+          <a href="index.html" class="logo"><h1><b>GirBot</b></h1>
+        
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="general.html" class="navbar-link">General Commands</a>
+          </li>
+
+          <li>
+            <a href="moderation.html" class="navbar-link">Moderation Commands</a>
+          </li>
+		  
+		  <li>
+            <a href="fun.html" class="navbar-link">Fun Commands</a>
+          </li>
+		  
+		  <li>
+            <a href="https://discord.gg/WR9xg7PRJj" class="navbar-link">Support</a>
+          </li>
+		  
+        </ul>
+
+      </nav>
+
+      <div class="btn-group">
+
+		<a href="https://discord.com/oauth2/authorize?client_id=1230850535469486100" class="btn btn-primary-header" onclick="openInNewWindow(event)">
+			
+			Invite Bot
+		</a>
+
+      </div>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-overlay data-nav-toggler></div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="desc" aria-label="home">
+        <div class="container">
+
+ <div class="desc-banner">
+          </div>
+          <div class="desc-content-commands">
+		  
+          <h2 class="h1 section-title text-center">General Commands</h2>
+
+        <p class="h3 section-title text-center">
+            Commands any user can use.
+        </p>
+
+		<script>
+			function openInNewWindow(event) {
+			event.preventDefault();
+			window.open('https://discord.com/oauth2/authorize?client_id=1240398531257176144&permissions=8&integration_type=0&scope=bot+applications.commands', '_blank', 'width=500,height=800');
+			}
+		</script>
+
+        </div>
+      </section>
+
+		<!-- 
+          - #DESCRIPTION
+        -->
+      <section class="section instruction" aria-label="instruction">
+        <div class="container" id="feature">
+<ul>
+  <li>
+    <div class="description-card-1">
+      <h3 class="desc-title">/AFK</h3>
+      <h5>Notify users you're not currently at your computer.</h5>
+      <p class="card-text-desc">
+        Arguments: List, Set
+      </p>
+    </div>
+  </li>
+  <li>
+    <div class="description-card-1">
+      <h3 class="desc-title">/Bot</h3>
+      <h5>View information about GirBot.</h5>
+      <p class="card-text-desc">
+        Arguments: Changelogs, Donate, Feedback, Info, Links, Owner, Ping, Support, Uptime, Vote
+      </p>
+    </div>
+  </li>
+  <li>
+    <div class="description-card-1">
+      <h3 class="desc-title">/Music</h3>
+      <h5>Play music in voice chats.</h5>
+      <p class="card-text-desc">
+        Arguments: Bassboost, Clear, Loop, Lyrics, Pause, Play, Playing, Previous, Queue, Remove, Resume, Seek, Shuffle, Skip, Skipto, Stop, Volume
+      </p>
+    </div>
+  </li>
+  <li>
+    <div class="description-card-1">
+      <h3 class="desc-title">/Notepad</h3>
+      <h5>Save notes in a notepad.</h5>
+      <p class="card-text-desc">
+        Arguments: Add, Delete, Edit, Notes
+      </p>
+    </div>
+  </li>
+  <li>
+    <div class="description-card-1">
+      <h3 class="desc-title">/Search</h3>
+      <h5>Search the web.</h5>
+      <p class="card-text-desc">
+        Arguments: Bing, Corona, Crypto, Ddg, Docs, Github, Google, Hexcolour, Itunes, Npm, Steam, Translate, Weather, Youtube
+      </p>
+    </div>
+  </li>
+  <li>
+    <div class="description-card-1">
+      <h3 class="desc-title">/Serverstats</h3>
+      <h5>View stats about the server you're in.</h5>
+      <p class="card-text-desc">
+        Arguments: Animated-emoji, Boosts, Bots, Channels, Emoji, Members, News-Channel, Roles, Stage-Channels, Static-Emojis, Text-Channels, Tier, Time, Voice-Channels
+      </p>
+    </div>
+  </li>
+
+  
+
+        </section>
+
+        <footer class="footer">
+            <div class="footer-bottom">
+              <div class="container">
+                <p class="copyright">
+                  &copy; 2024 GirBot
+                </p>
+                </ul>
+              </div>
+            </div>
+          </footer>
+
+  <!-- 
+    - ionicon-link
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="assets/js/script.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

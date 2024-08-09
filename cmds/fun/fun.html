@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>GirBot</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="icon" href="https://i.imgur.com/PaAd8S9.jpeg">
+
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+
+  <link rel="preload" as="image" href="https://i.imgur.com/PaAd8S9.jpeg">
+
+  <style>
+      /*** Works on common browsers ***/
+  ::selection {
+  background-color: #3182551c;
+  color: #31825699;
+}
+
+/*** Mozilla based browsers ***/
+  ::-moz-selection {
+  background-color: #3182551c;
+  color: #31825699;
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+    <a href="index.html" class="logo">
+      <img src="https://i.imgur.com/PaAd8S9.jpeg" width="50" height="50" alt="Logo">
+      <h1 class="logo-text" style="color:#FFFFFF;"><b>GirBot</b></h1>
+    </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+		
+
+          <a href="index.html" class="logo"><h1><b>GirBot</b></h1>
+        
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="general.html" class="navbar-link">General Commands</a>
+          </li>
+
+          <li>
+            <a href="moderation.html" class="navbar-link">Moderation Commands</a>
+          </li>
+		  
+		  <li>
+            <a href="fun.html" class="navbar-link">Fun Commands</a>
+          </li>
+		  
+		  <li>
+            <a href="https://discord.gg/WR9xg7PRJj" class="navbar-link">Support</a>
+          </li>
+		  
+        </ul>
+
+      </nav>
+
+      <div class="btn-group">
+
+		<a href="https://discord.com/oauth2/authorize?client_id=1230850535469486100" class="btn btn-primary-header" onclick="openInNewWindow(event)">
+			
+			Invite Bot
+		</a>
+
+      </div>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-overlay data-nav-toggler></div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="desc" aria-label="home">
+        <div class="container">
+
+ <div class="desc-banner">
+          </div>
+          <div class="desc-content-commands">
+		  
+          <h2 class="h1 section-title text-center">Fun Commands</h2>
+
+        <p class="h3 section-title text-center">
+            Fun commands any user can user.
+        </p>
+
+		<script>
+			function openInNewWindow(event) {
+			event.preventDefault();
+			window.open('https://discord.com/oauth2/authorize?client_id=1240398531257176144&permissions=8&integration_type=0&scope=bot+applications.commands', '_blank', 'width=500,height=800');
+			}
+		</script>
+
+        </div>
+      </section>
+
+		<!-- 
+          - #DESCRIPTION
+        -->
+      <section class="section instruction" aria-label="instruction">
+        <div class="container" id="feature">
+<ul>
+  <li>
+    <div class="description-card-1">
+      <h3 class="desc-title">/Birthday</h3>
+      <h5>Store your birthday in a server.</h5>
+      <p class="card-text-desc">
+        Arguments: Check, Delete, List, Set
+      </p>
+    </div>
+  </li>
+  <li>
+    <div class="description-card-1">
+      <h3 class="desc-title">/Casino</h3>
+      <h5>Gamble.</h5>
+      <p class="card-text-desc">
+        Arguments: Blackjack, Crash, Roulette, Slots
+      </p>
+    </div>
+  </li>
+  <li>
+    <div class="description-card-1">
+      <h3 class="desc-title">/Economy</h3>
+      <h5>Basically what people hate doing irl, but on Discord.</h5>
+      <p class="card-text-desc">
+        Arguments: Additem, Addmoney, Balance, Beg, Buy, Clear, Crime, Daily, Deleteitem, Deposit, Fish, Hourly, Hunt, Leaderboard, Monthly, Pay, Present, Removemoney, Rob, Store, Weekly, Work, Yearly
+      </p>
+    </div>
+  </li>
+  <li>
+    <div class="description-card-1">
+      <h3 class="desc-title">/Family</h3>
+      <h5>Some shit Discord users will never experience irl.</h5>
+      <p class="card-text-desc">
+        Arguments: Adopt, Delete, Disown, Divorce, Family, Propose
+      </p>
+    </div>
+  </li>
+  <li>
+    <div class="description-card-1">
+      <h3 class="desc-title">/Fun</h3>
+      <h5>Random fun commands.</h5>
+      <p class="card-text-desc">
+        Arguments: Ascii, Birdfact, Catfact, Cleverrate, Confused, Dinochrome, Dogfact, Epicgamerrate, Fact, Gif, Hack, Howgay, Hug, Kill, Koalafact, Lovemeter, Pandafact, Reverse, Rickroll, Roast, Say, Simprate, Stankrate, Sudo, Token, Worldclock, Xmas
+      </p>
+    </div>
+  </li>
+  <li>
+    <div class="description-card-1">
+      <h3 class="desc-title">/Games</h3>
+      <h5>Games to play when you're bored.</h5>
+      <p class="card-text-desc">
+        Arguments: 8ball, Fasttype, Music-trivia, roll, rps, Skipword, Snake, Trivia, Willyoupressthebutton, Wouldyourather
+      </p>
+    </div>
+  </li>
+  <li>
+    <div class="description-card-1">
+      <h3 class="desc-title">/Images</h3>
+      <h5>View images of your choice.</h5>
+      <p class="card-text-desc">
+        Arguments: Ad, Avatar, Banner, Bed, Bird, Blur, Burn, Car, Cat, Clown, Clyde, Colorify, Darkness, Dog, Drake, Facepalm, Fox, Glass, Greyscale, Image, Invert, Kiss, Koala, Meme, Panda, Podium, Pooh, Redpanda, Spank, Triggered, Trumptweet, Tweet, Wallpaper, Wanted, Wasted
+      </p>
+    </div>
+  </li>
+  <li>
+    <div class="description-card-1">
+      <h3 class="desc-title">/Profile</h3>
+      <h5>Create a personal profile.</h5>
+      <p class="card-text-desc">
+        Arguments: Aboutme, Addactor, Addartist, Addfood, Addhobby, Addmovie, Addpet, Addsong, Age, Bday, Color, Create, Delactor, Delartist, Delete, Delfood, Delhobby, Delmovie, Delpet, Delsong, Gender, Origin, Profile, Status
+      </p>
+    </div>
+  </li>
+  <li>
+    <div class="description-card-1">
+      <h3 class="desc-title">/Soundboard</h3>
+      <h5>Soundboard to mess with your friends in vc.</h5>
+      <p class="card-text-desc">
+        Arguments: Dancememe, Defaultdance, Despacito, Discordcall, Discordjoin, Discordleave, Discordnotification, Elevator, Fbi, Jeff, Lambo, Missionfailed, Moaning, Nani, Nyancat, Ohh, Reee, Rickastley, Rimshot, Roblox, Running, Shotdown, Spongebob, Startup, Thomas, Tobecontinued, Wegothim, Windowserror, Windowsshutdown, Wow, Yeet
+      </p>
+    </div>
+  </li>
+  <li>
+    <div class="description-card-1">
+      <h3 class="desc-title">/Thanks</h3>
+      <h5>Thank a user in the server.</h5>
+      <p class="card-text-desc">
+        Arguments: Check, Thanks
+      </p>
+    </div>
+  </li>
+  <li>
+    <div class="description-card-1">
+      <h3 class="desc-title">/Tools</h3>
+      <h5>Random tools.</h5>
+      <p class="card-text-desc">
+        Arguments: Anagram, Button, Calculator, Decode, Emojify, Encode, Enlarge, Mcskin, Mcstatus, Pwdgen, Qrcode, Remind, Review, Sroucebin, Url
+      </p>
+    </div>
+  </li>
+  
+
+        </section>
+        
+        <footer class="footer">
+            <div class="footer-bottom">
+              <div class="container">
+                <p class="copyright">
+                  &copy; 2024 GirBot
+                </p>
+                </ul>
+              </div>
+            </div>
+          </footer>
+
+  <!-- 
+    - ionicon-link
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="assets/js/script.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

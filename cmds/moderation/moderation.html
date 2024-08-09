@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>GirBot</title>
+  <!-- 
+    - favicon
+  -->
+  <link rel="icon" href="https://i.imgur.com/PaAd8S9.jpeg">
+
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+
+  <link rel="preload" as="image" href="https://i.imgur.com/PaAd8S9.jpeg">
+
+
+  <style>
+    /*** Works on common browsers ***/
+    ::selection {
+    background-color: #3182551c;
+    color: #31825699;
+    }
+
+/*** Mozilla based browsers ***/
+    ::-moz-selection {
+    background-color: #3182551c;
+    color: #31825699;
+    }
+</style>
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+    <a href="index.html" class="logo">
+      <img src="https://i.imgur.com/PaAd8S9.jpeg" width="50" height="50" alt="Logo">
+      <h1 class="logo-text" style="color:#FFFFFF;"><b>GirBot</b></h1>
+    </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+		
+
+          <a href="index.html" class="logo"><h1><b>GirBot</b></h1>
+        
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="general.html" class="navbar-link">General Commands</a>
+          </li>
+
+          <li>
+            <a href="moderation.html" class="navbar-link">Moderation Commands</a>
+          </li>
+		  
+		  <li>
+            <a href="fun.html" class="navbar-link">Fun Commands</a>
+          </li>
+		  
+		  <li>
+            <a href="https://discord.gg/WR9xg7PRJj" class="navbar-link">Support</a>
+          </li>
+		  
+        </ul>
+
+      </nav>
+
+      <div class="btn-group">
+
+		<a href="https://discord.com/oauth2/authorize?client_id=1230850535469486100" class="btn btn-primary-header" onclick="openInNewWindow(event)">
+			
+			Invite Bot
+		</a>
+
+      </div>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-overlay data-nav-toggler></div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="desc" aria-label="home">
+        <div class="container">
+
+ <div class="desc-banner">
+          </div>
+          <div class="desc-content-commands">
+		  
+          <h2 class="h1 section-title text-center">Moderation Commands</h2>
+
+        <p class="h3 section-title text-center">
+            Commands mods & admins can use.
+        </p>
+
+		<script>
+			function openInNewWindow(event) {
+			event.preventDefault();
+			window.open('https://discord.com/oauth2/authorize?client_id=1240398531257176144&permissions=8&integration_type=0&scope=bot+applications.commands', '_blank', 'width=500,height=800');
+			}
+		</script>
+
+        </div>
+      </section>
+
+		<!-- 
+          - #DESCRIPTION
+        -->
+      <section class="section instruction" aria-label="instruction">
+        <div class="container" id="feature">
+<ul>
+    <li>
+        <div class="description-card-1">
+          <h3 class="desc-title">/Announcement</h3>
+          <h5>Generate an embedded announcement.</h5>
+          <p class="card-text-desc">
+            Arguments: Create, Edit
+          </p>
+        </div>
+      </li>
+  <li>
+    <li>
+        <div class="description-card-1">
+          <h3 class="desc-title">/Automod</h3>
+          <h5>Default server protection commands.</h5>
+          <p class="card-text-desc">
+            Arguments: Add, Antiinvite, Antilinks, Antispam, Display, Linkschannel, Remove
+          </p>
+        </div>
+      </li>
+      <li>
+        <div class="description-card-1">
+          <h3 class="desc-title">/Autosetup</h3>
+          <h5>Setup channels for specific activities.</h5>
+          <p class="card-text-desc">
+            Arguments: Customvoice, Fun, Games, Logs, Ticketpanel, Welcome
+          </p>
+        </div>
+      </li>
+      <li>
+        <div class="description-card-1">
+          <h3 class="desc-title">/Config</h3>
+          <h5>Custom messages for users.</h5>
+          <p class="card-text-desc">
+            Arguments: Leavemessage, Levelmessage, Levels, Setchannelname, Setcolor, Setverify, Ticketmessage, Welcomemessage
+          </p>
+        </div>
+      </li>
+      <li>
+        <div class="description-card-1">
+          <h3 class="desc-title">/Customcommands</h3>
+          <h5>Allows admins to make custom commands.</h5>
+          <p class="card-text-desc">
+            Arguments: Add, Delete
+          </p>
+        </div>
+      </li>
+      <li>
+        <div class="description-card-1">
+          <h3 class="desc-title">/Guild</h3>
+          <h5>View information about your server.</h5>
+          <p class="card-text-desc">
+            Arguments: Channelinfo, Emojis, Info, Inviteinfo, Members, Oldestmember, Roleinfo, Stealemoji, Userinfo, Youngestmember
+          </p>
+        </div>
+      </li>
+    <div class="description-card-1">
+      <h3 class="desc-title">/Serverstats</h3>
+      <h5>View stats about the server you're in.</h5>
+      <p class="card-text-desc">
+        Arguments: Animated-emoji, Boosts, Bots, Channels, Emoji, Members, News-Channel, Roles, Stage-Channels, Static-Emojis, Text-Channels, Tier, Time, Voice-Channels
+      </p>
+    </div>
+  </li>
+  <li>
+    <div class="description-card-1">
+      <h3 class="desc-title">/Invites</h3>
+      <h5>Manage user invites.</h5>
+      <p class="card-text-desc">
+        Arguments: Add, Leaderboard, Remove, Show
+      </p>
+    </div>
+  </li>
+  <li>
+    <div class="description-card-1">
+      <h3 class="desc-title">/Levels</h3>
+      <h5>Manage user levels.</h5>
+      <p class="card-text-desc">
+        Arguments: Createreward, Deletereward, Leaderboard, Rank, Rewards, Setlevel, Setxp
+      </p>
+    </div>
+  </li>
+  <li>
+    <div class="description-card-1">
+      <h3 class="desc-title">/Messages</h3>
+      <h5>Manage user messages.</h5>
+      <p class="card-text-desc">
+        Arguments: Add, Createreward, Deletereward, Leaderboard, Remove, Rewards, Show
+      </p>
+    </div>
+  </li>
+  <li>
+    <div class="description-card-1">
+      <h3 class="desc-title">/Moderation</h3>
+      <h5>Moderate users.</h5>
+      <p class="card-text-desc">
+        Arguments: Ban, Banlist, Clear, Clearuser, Demote, Kick, Lock, Lockdown, Nuke, Softban, Tempban, Timeout, Unban, Unlock, Unwarn, Warn, Warnings
+      </p>
+    </div>
+  </li>
+  <li>
+    <div class="description-card-1">
+      <h3 class="desc-title">/Setup</h3>
+      <h5>Easily setup some simple chats for your members.</h5>
+      <p class="card-text-desc">
+        Arguments: Customvoice, Deletesetup, Fun, Games, Logs, Ticketpanel, Tickets, Welcomechannels, Welcomeroles
+      </p>
+    </div>
+  </li>
+  <li>
+    <div class="description-card-1">
+      <h3 class="desc-title">/Stickymessages</h3>
+      <h5>Sticky a message in any chat.</h5>
+      <p class="card-text-desc">
+        Arguments: Messages, Stick, Unstick
+      </p>
+    </div>
+  </li>
+  <li>
+    <div class="description-card-1">
+      <h3 class="desc-title">/Tickets</h3>
+      <h5>Create and modify tickets.</h5>
+      <p class="card-text-desc">
+        Arguments: Add, Claim, Close, Create, Delete, Information, Lower, Notice, Open, Raise, Remove, Rename, Transcript, Unclaim
+      </p>
+    </div>
+  </li>
+  <li>
+    <div class="description-card-1">
+      <h3 class="desc-title">/Voice</h3>
+      <h5>Manage server voice chats.</h5>
+      <p class="card-text-desc">
+        Arguments: Limit, Lock, Rename, Unlock
+      </p>
+    </div>
+  </li>
+
+        </section>
+
+
+
+  <footer class="footer">
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">
+          &copy; 2024 GirBot
+        </p>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="assets/js/script.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
